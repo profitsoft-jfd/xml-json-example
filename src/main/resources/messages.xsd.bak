@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="stringtype">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="inttype">
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="messidtype">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="message">
+    <xs:sequence>
+      <xs:element name="header" type="stringtype"/>
+      <xs:element name="body" type="xs:string" minOccurs="0"/>
+      <xs:element name="messid" type="messidtype"/>
+      <xs:element name="size" type="inttype"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="messid" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="messageStore">
+    <xs:sequence>
+      <xs:element name="category" type="stringtype"/>
+      <xs:element name="messages" type="message" minOccurs="0" maxOccurs="unbounded"/>
+<!--
+		 @XmlElementWrapper(name = "messages")
+         @XmlElement(name = "message")
+ -->
+
+<!--      <xs:element name="messages" minOccurs="0">-->
+<!--        <xs:complexType>-->
+<!--          <xs:sequence>-->
+<!--            <xs:element name="message" type="message" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--          </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--      </xs:element>-->
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="messagestore" type="messageStore"/>
+
+</xs:schema>

@@ -1,0 +1,19 @@
+{
+  "category" : "all",
+  "messages" : [ {
+    "header" : "All Header 1",
+    "body" : "All Body1",
+    "size" : 6,
+    "messid" : "0001"
+  }, {
+    "header" : "All Header 2",
+    "body" : "All Body2",
+    "size" : 6,
+    "messid" : "0002"
+  }, {
+    "header" : "All Header 3",
+    "body" : "All Body  3",
+    "size" : 7,
+    "messid" : "0003"
+  } ]
+}

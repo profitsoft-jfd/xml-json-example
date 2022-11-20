@@ -1,0 +1,21 @@
+<messagestore>
+	<category>private</category>
+	<!--Zero or more repetitions:-->
+	<messages>
+		<header>Header 1</header>
+		<body>Body1</body>
+		<messid>0001</messid>
+		<size>6</size>
+
+		<header>Header 2</header>
+		<body>Body2</body>
+		<messid>0002</messid>
+		<size>6</size>
+
+		<header>Header 3</header>
+		<!--Optional:-->
+		<body>Body  3</body>
+		<messid>0003</messid>
+		<size>7</size>
+	</messages>
+</messagestore>

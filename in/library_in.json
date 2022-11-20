@@ -1,0 +1,15 @@
+{
+  "ident" : "008",
+  "name" : "Second Library",
+
+  "books" : [ {
+    "bookname" : "Book21",
+    "year" : 2021,
+    "annotation" : "Annotation <Book21> text"
+  }, {
+    "bookname" : "Book22",
+    "year" : 2022,
+    "annotation" : "Annotation <Book22> text"
+  } ],
+  "location" : "loaction 22"
+}

@@ -1,0 +1,27 @@
+<messagestore>
+	<category>private</category>
+	<!--Zero or more repetitions:-->
+	<messages>
+		<message messid="0011">
+			<header>Header 1</header>
+			<!--Optional:-->
+			<body>Body1</body>
+			<messid>0001</messid>
+			<size>6</size>
+		</message>
+		<message messid="0021">
+			<header>Header 2</header>
+			<!--Optional:-->
+			<body>Body2</body>
+			<messid>0002</messid>
+			<size>6</size>
+		</message>
+		<message messid="0031">
+			<header>Header 3</header>
+			<!--Optional:-->
+			<body>Body  3</body>
+			<messid>0003</messid>
+			<size>7</size>
+		</message>
+	</messages>
+</messagestore>

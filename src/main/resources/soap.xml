@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken>
+				<wsse:Username>userWS</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">00011100</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body>
+		<getProductDetailsResponse xmlns="http://warehouse.example.com/ws">
+			<getProductDetailsResult>
+				<productID>12345</productID>
+				<productName>Стакан граненый</productName>
+				<description>Стакан граненый. 250 мл.</description>
+				<price>9.95</price>
+				<currency>
+					<code>840</code>
+					<alpha3>USD</alpha3>
+					<sign>$</sign>
+					<name>US dollar</name>
+					<accuracy>2</accuracy>
+				</currency>
+				<inStock>true</inStock>
+			</getProductDetailsResult>
+		</getProductDetailsResponse>
+	</soap:Body>
+</soap:Envelope>
+
